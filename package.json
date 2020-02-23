@@ -1,0 +1,24 @@
+{
+  "name": "testes-automatizados-js-mochachai-jest-jasmine",
+  "version": "1.0.0",
+  "description": "Simple tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:mocha --silent; npm run test:jest --silent; npm run test:jasmine --silent",
+    "test:mocha": "node_modules/.bin/mocha ./src/test/mocha/*.test.js",
+    "test:jest": "node_modules/.bin/jest --env=jsdom ./src/test/jest/*.test.js",
+    "test:jasmine": "node_modules/.bin/jasmine ./src/test/jasmine/*Spec.js",
+    "test:standard": "node_modules/.bin/standard src/*.js",
+    "test:eslint": "node_modules/.bin/eslint src/*.js --fix"
+  },
+  "author": "Jackson Machado",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "eslint": "^6.8.0",
+    "jasmine": "^3.5.0",
+    "jest": "25.1.0",
+    "mocha": "7.0.1",
+    "standard": "^14.3.1"
+  }
+}
