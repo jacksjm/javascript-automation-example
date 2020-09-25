@@ -1,5 +1,7 @@
 # JavaScript Automation Example
 
+![CodeQL](https://github.com/jacksjm/javascript-automation-example/workflows/CodeQL/badge.svg)
+
 This repository destiny to present a simple dashboard with 3 (three) differents tests frameworks: Mocha + Chai, Jest and Jasmine.
 
 ## Run locally
